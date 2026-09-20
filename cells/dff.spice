@@ -1,88 +1,88 @@
 * Sky130 D Flip-Flop Extracted Netlist
-.subckt dff IN CLK VDD VSS Q
+.subckt dff in clk vdd vss Q
 
-X0 a_n340_26# IN VDD VDD sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.38034 ps=2.92842 w=1.26 l=0.15
-X1 a_0_0# CLK VSS VSS sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.12425 ps=1.40711 w=0.42 l=0.15
-X2 a_2334_26# a_1979_26# VSS VSS sky130_fd_pr__nfet_01v8 ad=0.063 pd=0.72 as=0.12425 ps=1.40711 w=0.42 l=0.15
-X3 a_407_26# a_30_26# VSS VSS sky130_fd_pr__nfet_01v8 ad=0.1239 pd=1.43 as=0.12425 ps=1.40711 w=0.42 l=0.15
-X4 VDD a_1979_26# a_2334_26# VDD sky130_fd_pr__pfet_01v8 ad=0.38034 pd=2.92842 as=0.189 ps=1.56 w=1.26 l=0.15
-X5 Q a_2334_26# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.207 pd=1.51 as=0.34713 ps=2.67276 w=1.15 l=0.15
-X6 VDD a_2334_26# Q VDD sky130_fd_pr__pfet_01v8 ad=0.34713 pd=2.67276 as=0.207 ps=1.51 w=1.15 l=0.15
-X7 a_2876_26# a_2334_26# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.378 pd=3.12 as=0.38034 ps=2.92842 w=1.26 l=0.15
-X8 VSS a_2334_26# Q VSS sky130_fd_pr__nfet_01v8 ad=0.14792 pd=1.67513 as=0.0775 ps=0.81 w=0.5 l=0.15
-X9 a_1979_26# CLK a_407_26# VSS sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.1239 ps=1.43 w=0.42 l=0.15
-X10 a_407_26# a_30_26# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.378 pd=3.12 as=0.38034 ps=2.92842 w=1.26 l=0.15
-X11 a_30_26# a_0_0# a_713_26# VDD sky130_fd_pr__pfet_01v8 ad=0.3654 pd=3.1 as=0.3906 ps=3.14 w=1.26 l=0.15
-X12 a_2876_26# a_2334_26# VSS VSS sky130_fd_pr__nfet_01v8 ad=0.1239 pd=1.43 as=0.12425 ps=1.40711 w=0.42 l=0.15
-X13 a_30_26# CLK a_n340_26# VDD sky130_fd_pr__pfet_01v8 ad=0.3654 pd=3.1 as=0.3906 ps=3.14 w=1.26 l=0.15
-X14 a_n340_26# IN VSS VSS sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.12425 ps=1.40711 w=0.42 l=0.15
-X15 a_2334_26# a_1979_26# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.189 pd=1.56 as=0.38034 ps=2.92842 w=1.26 l=0.15
-X16 a_713_26# a_407_26# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.38034 ps=2.92842 w=1.26 l=0.15
-X17 Q a_2334_26# VSS VSS sky130_fd_pr__nfet_01v8 ad=0.0775 pd=0.81 as=0.14792 ps=1.67513 w=0.5 l=0.15
-X18 a_0_0# CLK VDD VDD sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.38034 ps=2.92842 w=1.26 l=0.15
-X19 a_1979_26# CLK a_2876_26# VDD sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.378 ps=3.12 w=1.26 l=0.15
-X20 a_30_26# a_0_0# a_n340_26# VSS sky130_fd_pr__nfet_01v8 ad=0.1218 pd=1.42 as=0.126 ps=1.44 w=0.42 l=0.15
-X21 VSS a_1979_26# a_2334_26# VSS sky130_fd_pr__nfet_01v8 ad=0.12425 pd=1.40711 as=0.063 ps=0.72 w=0.42 l=0.15
-X22 a_713_26# a_407_26# VSS VSS sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.12425 ps=1.40711 w=0.42 l=0.15
-X23 a_1979_26# a_0_0# a_407_26# VDD sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.378 ps=3.12 w=1.26 l=0.15
-X24 Q a_2334_26# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.207 pd=1.51 as=0.34713 ps=2.67276 w=1.15 l=0.15
-X25 a_1979_26# a_0_0# a_2876_26# VSS sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.1239 ps=1.43 w=0.42 l=0.15
-X26 VDD a_2334_26# Q VDD sky130_fd_pr__pfet_01v8 ad=0.34713 pd=2.67276 as=0.207 ps=1.51 w=1.15 l=0.15
-X27 a_30_26# CLK a_713_26# VSS sky130_fd_pr__nfet_01v8 ad=0.1218 pd=1.42 as=0.126 ps=1.44 w=0.42 l=0.15
-C0 IN VDD 0.09994f
+X0 a_n340_26# in vdd vdd sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.38034 ps=2.92842 w=1.26 l=0.15
+X1 a_0_0# clk vss vss sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.12425 ps=1.40711 w=0.42 l=0.15
+X2 a_2334_26# a_1979_26# vss vss sky130_fd_pr__nfet_01v8 ad=0.063 pd=0.72 as=0.12425 ps=1.40711 w=0.42 l=0.15
+X3 a_407_26# a_30_26# vss vss sky130_fd_pr__nfet_01v8 ad=0.1239 pd=1.43 as=0.12425 ps=1.40711 w=0.42 l=0.15
+X4 vdd a_1979_26# a_2334_26# vdd sky130_fd_pr__pfet_01v8 ad=0.38034 pd=2.92842 as=0.189 ps=1.56 w=1.26 l=0.15
+X5 Q a_2334_26# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.207 pd=1.51 as=0.34713 ps=2.67276 w=1.15 l=0.15
+X6 vdd a_2334_26# Q vdd sky130_fd_pr__pfet_01v8 ad=0.34713 pd=2.67276 as=0.207 ps=1.51 w=1.15 l=0.15
+X7 a_2876_26# a_2334_26# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.378 pd=3.12 as=0.38034 ps=2.92842 w=1.26 l=0.15
+X8 vss a_2334_26# Q vss sky130_fd_pr__nfet_01v8 ad=0.14792 pd=1.67513 as=0.0775 ps=0.81 w=0.5 l=0.15
+X9 a_1979_26# clk a_407_26# vss sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.1239 ps=1.43 w=0.42 l=0.15
+X10 a_407_26# a_30_26# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.378 pd=3.12 as=0.38034 ps=2.92842 w=1.26 l=0.15
+X11 a_30_26# a_0_0# a_713_26# vdd sky130_fd_pr__pfet_01v8 ad=0.3654 pd=3.1 as=0.3906 ps=3.14 w=1.26 l=0.15
+X12 a_2876_26# a_2334_26# vss vss sky130_fd_pr__nfet_01v8 ad=0.1239 pd=1.43 as=0.12425 ps=1.40711 w=0.42 l=0.15
+X13 a_30_26# clk a_n340_26# vdd sky130_fd_pr__pfet_01v8 ad=0.3654 pd=3.1 as=0.3906 ps=3.14 w=1.26 l=0.15
+X14 a_n340_26# in vss vss sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.12425 ps=1.40711 w=0.42 l=0.15
+X15 a_2334_26# a_1979_26# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.189 pd=1.56 as=0.38034 ps=2.92842 w=1.26 l=0.15
+X16 a_713_26# a_407_26# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.38034 ps=2.92842 w=1.26 l=0.15
+X17 Q a_2334_26# vss vss sky130_fd_pr__nfet_01v8 ad=0.0775 pd=0.81 as=0.14792 ps=1.67513 w=0.5 l=0.15
+X18 a_0_0# clk vdd vdd sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.38034 ps=2.92842 w=1.26 l=0.15
+X19 a_1979_26# clk a_2876_26# vdd sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.378 ps=3.12 w=1.26 l=0.15
+X20 a_30_26# a_0_0# a_n340_26# vss sky130_fd_pr__nfet_01v8 ad=0.1218 pd=1.42 as=0.126 ps=1.44 w=0.42 l=0.15
+X21 vss a_1979_26# a_2334_26# vss sky130_fd_pr__nfet_01v8 ad=0.12425 pd=1.40711 as=0.063 ps=0.72 w=0.42 l=0.15
+X22 a_713_26# a_407_26# vss vss sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.12425 ps=1.40711 w=0.42 l=0.15
+X23 a_1979_26# a_0_0# a_407_26# vdd sky130_fd_pr__pfet_01v8 ad=0.3906 pd=3.14 as=0.378 ps=3.12 w=1.26 l=0.15
+X24 Q a_2334_26# vdd vdd sky130_fd_pr__pfet_01v8 ad=0.207 pd=1.51 as=0.34713 ps=2.67276 w=1.15 l=0.15
+X25 a_1979_26# a_0_0# a_2876_26# vss sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.1239 ps=1.43 w=0.42 l=0.15
+X26 vdd a_2334_26# Q vdd sky130_fd_pr__pfet_01v8 ad=0.34713 pd=2.67276 as=0.207 ps=1.51 w=1.15 l=0.15
+X27 a_30_26# clk a_713_26# vss sky130_fd_pr__nfet_01v8 ad=0.1218 pd=1.42 as=0.126 ps=1.44 w=0.42 l=0.15
+C0 in vdd 0.09994f
 C1 Q a_2334_26# 0.17523f
-C2 Q VDD 0.41951f
+C2 Q vdd 0.41951f
 C3 a_2876_26# a_1979_26# 0.23377f
-C4 CLK a_1979_26# 0.2972f
-C5 CLK a_2876_26# 0.17921f
+C4 clk a_1979_26# 0.2972f
+C5 clk a_2876_26# 0.17921f
 C6 a_30_26# a_1979_26# 0.00121f
 C7 a_0_0# a_1979_26# 0.09523f
 C8 a_0_0# a_2876_26# 0.06324f
-C9 a_30_26# CLK 0.67925f
-C10 a_0_0# CLK 1.21198f
+C9 a_30_26# clk 0.67925f
+C10 a_0_0# clk 1.21198f
 C11 a_2334_26# a_1979_26# 0.35069f
 C12 a_1979_26# a_407_26# 0.17132f
-C13 VDD a_1979_26# 1.41068f
+C13 vdd a_1979_26# 1.41068f
 C14 a_2334_26# a_2876_26# 0.093f
-C17 VDD a_2876_26# 0.36897f
-C18 a_n340_26# CLK 0.01906f
-C19 a_2334_26# CLK 0.15026f
-C20 CLK a_407_26# 0.32621f
-C21 VDD CLK 0.89003f
-C22 a_713_26# CLK 0.05606f
+C17 vdd a_2876_26# 0.36897f
+C18 a_n340_26# clk 0.01906f
+C19 a_2334_26# clk 0.15026f
+C20 clk a_407_26# 0.32621f
+C21 vdd clk 0.89003f
+C22 a_713_26# clk 0.05606f
 C23 Q a_1979_26# 0.00849f
-C25 IN CLK 0.00471f
+C25 in clk 0.00471f
 C27 a_0_0# a_30_26# 0.1812f
 C28 a_n340_26# a_30_26# 0.15521f
 C30 a_0_0# a_n340_26# 0.00964f
 C31 a_30_26# a_407_26# 0.19178f
-C32 VDD a_30_26# 0.95588f
+C32 vdd a_30_26# 0.95588f
 C33 a_2334_26# a_0_0# 0.2185f
 C34 a_0_0# a_407_26# 0.28164f
 C35 a_713_26# a_30_26# 0.18174f
-C36 a_0_0# VDD 0.65316f
+C36 a_0_0# vdd 0.65316f
 C37 a_713_26# a_0_0# 0.08897f
-C38 IN a_30_26# 0.0013f
+C38 in a_30_26# 0.0013f
 C39 a_n340_26# a_407_26# 0.00339f
-C40 VDD a_n340_26# 0.38134f
-C41 IN a_0_0# 0.00372f
+C40 vdd a_n340_26# 0.38134f
+C41 in a_0_0# 0.00372f
 C42 a_2334_26# a_407_26# 0.00151f
-C43 a_2334_26# VDD 0.82414f
-C44 VDD a_407_26# 0.63915f
+C43 a_2334_26# vdd 0.82414f
+C44 vdd a_407_26# 0.63915f
 C47 a_713_26# a_407_26# 0.08482f
-C48 a_713_26# VDD 0.37385f
-C49 IN a_n340_26# 0.04491f
-C51 Q VSS 0.2847f
-C52 CLK VSS 1.45059f
-C53 IN VSS 0.21088f
-C54 VDD VSS 6.10106f
-C55 a_2876_26# VSS 0.28492f
-C56 a_713_26# VSS 0.21866f
-C57 a_n340_26# VSS 0.26522f
-C58 a_2334_26# VSS 1.08157f
-C59 a_1979_26# VSS 0.54886f
-C60 a_0_0# VSS 2.11951f
-C61 a_407_26# VSS 0.72982f
-C62 a_30_26# VSS 0.313f
+C48 a_713_26# vdd 0.37385f
+C49 in a_n340_26# 0.04491f
+C51 Q vss 0.2847f
+C52 clk vss 1.45059f
+C53 in vss 0.21088f
+C54 vdd vss 6.10106f
+C55 a_2876_26# vss 0.28492f
+C56 a_713_26# vss 0.21866f
+C57 a_n340_26# vss 0.26522f
+C58 a_2334_26# vss 1.08157f
+C59 a_1979_26# vss 0.54886f
+C60 a_0_0# vss 2.11951f
+C61 a_407_26# vss 0.72982f
+C62 a_30_26# vss 0.313f
 
 .ends dff

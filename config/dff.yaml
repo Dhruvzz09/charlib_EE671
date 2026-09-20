@@ -9,10 +9,10 @@ settings:
     energy: pJ
   named_nodes:
     primary_power:
-      name: VDD
+      name: vdd
       voltage: 1.8
     primary_ground:
-      name: VSS
+      name: vss
       voltage: 0.0
 
 cells:
@@ -23,14 +23,13 @@ cells:
       - config/mc_switches.spice
       - sky130A/libs.tech/ngspice/sky130.lib.spice tt
     inputs:
-      - IN
+      - in
     outputs:
       - Q
-    clock: "posedge CLK"
+    clock: "posedge clk"
     state:
-      - "IQ = IN"
+      - "IQ = in"
     functions:
-      - "IQ = IN"
       - "Q = IQ"
     data_slews:
       - 0.02
