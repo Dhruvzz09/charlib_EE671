@@ -1,6 +1,7 @@
 settings:
   lib_name: sky130_dff
   temperature: 25
+  multithreaded: False
   units:
     voltage: V
     time: ns
@@ -15,7 +16,7 @@ settings:
       voltage: 0.0
 
 cells:
-  dff:
+  DFF:
     netlist: cells/dff.spice
     area: 0.0
     models:
@@ -26,8 +27,10 @@ cells:
     outputs:
       - Q
     clock: "posedge CLK"
+    state:
+      - "IQ = IN"
     functions:
-      - "Q = IN"
+      - "Q = IQ"
     data_slews:
       - 0.02
       - 0.1
