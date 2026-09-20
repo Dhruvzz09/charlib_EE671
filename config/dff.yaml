@@ -26,10 +26,8 @@ cells:
     outputs:
       - Q
     clock: "posedge CLK"
-    state:
-      - "IQ = IN"
     functions:
-      - "Q = IQ"
+      - "Q = IN"
     data_slews:
       - 0.02
       - 0.1
