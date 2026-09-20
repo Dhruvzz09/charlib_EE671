@@ -30,10 +30,6 @@ cells:
       - "IQ = IN"
     functions:
       - "Q = IQ"
-    slews:
-      - 0.02
-      - 0.1
-      - 0.2
     data_slews:
       - 0.02
       - 0.1
@@ -47,8 +43,8 @@ cells:
       - 0.02
       - 0.05
     setup_time_range:
-      - -0.1
-      - 0.1
+      - -0.5
+      - 0.5
     hold_time_range:
-      - -0.1
-      - 0.1
+      - -0.5
+      - 0.5
